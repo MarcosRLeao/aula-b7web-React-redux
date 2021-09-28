@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/Home";
+import Sobre from "./components/Sobre/Sobre";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{background: "tomato", color: "#FFF", margin: "20px 0", padding: '0 20px 20px'}}>
+      <h1>COMPONENTE PRINCIPAL (APP) 
+        <br/> [x] aula de redux
+        <br/> [x] Persist-redux
+        </h1>
+      <Home/>
+      <Sobre/>
+      <Footer/>
     </div>
   );
 }
